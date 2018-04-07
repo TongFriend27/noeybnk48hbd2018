@@ -14,6 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/message', function () {
-    dd(request()->ip());
+Route::get('/ip', function () {
+	return response()->json(['ip' => request()->ip()]);
 });
