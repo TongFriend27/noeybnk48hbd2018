@@ -1,0 +1,302 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &:before, &:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+html {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fbc7bf;
+}
+
+.container {
+  margin: auto;
+  width: 18rem;
+  height: 14rem;
+}
+
+.fill {
+  z-index: 1;
+  width: 16rem;
+  height: 2rem;
+  border-radius: 0% 10% 10% 0%;
+  &.top, &.middle, &.bottom {
+    position: absolute;
+    background: #fde2ab;
+  }
+  &.top {
+    top: 5rem;
+  }
+  &.middle {
+    top: 8.5rem;
+  }
+  &.bottom {
+    bottom: 0;
+  }
+  &.strawberry-fill {
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem;
+    width: 4rem;
+    height: 2rem;
+    background: #f29583;
+    border-radius: 100%;
+    &.right {
+      left: 10rem;
+    }
+  }
+}
+
+.strawberry {
+  position: absolute;
+  z-index: 2;
+  top: -3rem;
+  left: 9rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  background: #f29583;
+  border-radius: 100% 100% 100% 20%;
+  .seeds {
+    z-index: 2;
+    width: 0.35rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    &.one, &.two, &.three, &.four, &.five, &.six {
+      position: absolute;
+      background: #fff;
+    }
+    &.one {
+      top: 3rem;
+      left: 1.5rem;
+    }
+    &.two {
+      top: 1rem;
+      left: 2rem;
+    }
+    &.three {
+      top: 2rem;
+      left: 3rem;
+    }
+    &.four {
+      top: 2.5rem;
+      left: 4.5rem;
+    }
+    &.five {
+      top: 3.5rem;
+      left: 3.5rem;
+    }
+    &.six {
+      top: 0.8rem;
+      left: 4rem;
+    }
+  }
+}
+
+.stem {
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100% 0%;
+  &.top, &.middle, &.bottom {
+    position: absolute;
+    background: #b6f2a4;
+  }
+  &.top {
+    top: -4rem;
+    left: 12rem;
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  &.middle {
+    top: -3.5rem;
+    left: 13rem;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  &.bottom {
+    top: -2.5rem;
+    left: 13.5rem;
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+  }
+}
+
+.cake {
+  position: absolute;
+  width: 18rem;
+  height: 14rem;
+  background: #f6efd7;
+  border-radius: 100% 40% 20% 50% / 30% 20% 20% 20%;
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -0.2rem;
+    width: 18rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: 150% 30% 30% 50% / 100% 100% 100% 0%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 9rem;
+    left: 1.3rem;
+    width: 16rem;
+    height: 5rem;
+    opacity: 0.65;
+    border-radius: 100% 100% 50% 0%;
+    -webkit-box-shadow: 0 0 3rem 2rem #d99c8c;
+    box-shadow: 0 0 3rem 2rem #d99c8c;
+  }
+}
+
+.candle {
+  position: absolute;
+  left: 6rem!important;
+  background-color: #b6f2a4;
+  width: 16px;
+  height: 50px;
+  border-radius: 8px / 4px;
+  top: -20px;
+  left: 50%;
+  margin-left: -8px;
+  z-index: 10;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: lighten(#b6f2a4, 10%);
+  }
+}
+
+/* $flameColor: #fde2ab; */
+$flameColor: orange;
+.flame {
+  position: absolute;
+  background-color: $flameColor;
+  width: 15px;
+  height: 35px;
+  border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+  top: -34px;
+  left: 50%;
+  margin-left: -7.5px;
+  z-index: 10;
+  box-shadow:
+    0 0 10px rgba($flameColor, 0.5),
+    0 0 20px rgba($flameColor, 0.5),
+    0 0 60px rgba($flameColor, 0.5),
+    0 0 80px rgba($flameColor, 0.5);
+  transform-origin: 50% 90%;
+  animation: flicker 1s ease-in-out alternate infinite;
+}
+
+@keyframes flicker {
+  0% {
+    transform: skewX(5deg);
+    box-shadow: 
+      0 0 10px rgba($flameColor, 0.2),
+      0 0 20px rgba($flameColor, 0.2),
+      0 0 60px rgba($flameColor, 0.2),
+      0 0 80px rgba($flameColor, 0.2) }
+  25% {
+    transform: skewX(-5deg);
+    box-shadow:
+      0 0 10px rgba($flameColor, 0.5),
+      0 0 20px rgba($flameColor, 0.5),
+      0 0 60px rgba($flameColor, 0.5),
+      0 0 80px rgba($flameColor, 0.5) }
+  50% {
+    transform: skewX(10deg);
+    box-shadow:
+      0 0 10px rgba($flameColor, 0.3),
+      0 0 20px rgba($flameColor, 0.3),
+      0 0 60px rgba($flameColor, 0.3),
+      0 0 80px rgba($flameColor, 0.3) }
+  75% {
+    transform: skewX(-10deg);
+    box-shadow:
+      0 0 10px rgba($flameColor, 0.4),
+      0 0 20px rgba($flameColor, 0.4),
+      0 0 60px rgba($flameColor, 0.4),
+      0 0 80px rgba($flameColor, 0.4) }
+  100% {
+    transform: skewX(5deg);
+    box-shadow:
+      0 0 10px rgba($flameColor, 0.5),
+      0 0 20px rgba($flameColor, 0.5),
+      0 0 60px rgba($flameColor, 0.5),
+      0 0 80px rgba($flameColor, 0.5) }
+}
+
+#welcome {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  margin-top: 250px;
+  > .header {
+    position: absolute;
+    top: 50px;
+    width: inherit;
+    text-align: center;
+    color: grey;
+  }
+  > .bottom {
+    color: grey;
+    margin-top: 250px;
+    .blockquote {
+      margin-bottom: 0;
+    }
+    > .hint {
+      text-align: right;
+    }
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 1s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+  .fade-2-enter-active, .fade-2-leave-active {
+    transition: opacity 2s;
+  }
+  .fade-2-enter, .fade-2-leave-to /* .fade-2-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+}
