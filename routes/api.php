@@ -44,5 +44,5 @@ Route::post('/message', function (Request $request) {
 	$ip = request()->ip();
 	$data = ['name' => $name, 'message' => $message, 'ip' => $ip];
     $result = \App\Models\Message::create($data);
-    return response()->json(['result' => ['name' => $name, 'message' => $message], 'total' => \App\Models\Message::count()]);
+    return response()->json(['result' => ['name' => $result['name'], 'message' => $result['message']], 'total' => \App\Models\Message::count()]);
 });
