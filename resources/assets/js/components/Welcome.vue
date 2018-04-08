@@ -1,8 +1,10 @@
 <template>
   <div id="welcome" class="container">
     <div class="header">
-        <h3>Happy Birthday</h3>
+        <h3>Happy 21st Birthday</h3>
         <h1>NOEY BNK48</h1>
+        <h4>Kanteera	Wadcharathadsanakul<h4>
+        <h2>APRIL 9, 1997<h2>
         <small>คำอวยพรทั้งหมด {{ total }} ข้อความ</small>
     </div>
     <div class="cake" :style="{ cursor: success ? 'default' : 'pointer' }" @click="openModal">
