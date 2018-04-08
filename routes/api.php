@@ -35,7 +35,7 @@ Route::get('/get-total', function (Request $request) {
 });
 
 Route::get('/get-all-message', function (Request $request) {
-    return response()->json(['message' => \App\Models\Message::orderByDesc('created_at')->get()]);
+    return response()->json(['message' => \App\Models\Message::select('name','message')->orderByDesc('created_at')->get()]);
 });
 
 Route::post('/message', function (Request $request) {
@@ -43,6 +43,6 @@ Route::post('/message', function (Request $request) {
 	$message = $request->get('message');
 	$ip = request()->ip();
 	$data = ['name' => $name, 'message' => $message, 'ip' => $ip];
-	$result = \App\Models\Message::create($data);
-    return response()->json(['result' => $result, 'total' => \App\Models\Message::count()]);
+    $result = \App\Models\Message::create($data);
+    return response()->json(['result' => ['name' => $name, 'message' => $message], 'total' => \App\Models\Message::count()]);
 });
