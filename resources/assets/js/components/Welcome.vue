@@ -40,7 +40,7 @@
     </div>
     <div class="bottom" :style="{ marginBottom: success ? '300px' : 0 }">
       <div class="hint" v-if="!success">
-        <small>กดที่เค้กเพื่ออวยพรและปักเทียนวันเกิด!</small>
+        <small>กดที่ 🍰 เพื่ออวยพรและปักเทียนสำหรับวันเกิด!</small>
       </div>
       <transition name="fade-2">
         <!-- <div class="card" v-if="success"> -->
@@ -194,7 +194,7 @@
         var params = {
           url: 'https://noeybnk48hbd2018.herokuapp.com',
           text: 'Happy! Happy Birthday นี่ไงเค้กของเธอปักเทียนวันเกิด~ 🍰',
-          hashtags: 'HBDNOEYBNK48, NoeyBNK48, BNK48'
+          hashtags: 'HBDNOEYBNK48,NoeyBNK48,BNK48'
         }
 
         for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop])
