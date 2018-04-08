@@ -190,7 +190,7 @@
           .replace(/\n/g, '<br/>')
       },
       twitterShared() {
-        var shareURL = "http://twitter.com/share?"
+        var shareURL = "http://twitter.com/intent/tweet?"
         var params = {
           url: 'https://noeybnk48hbd2018.herokuapp.com',
           text: 'Happy! Happy Birthday นี่ไงเค้กของเธอปักเทียนวันเกิด~ 🍰\nชาวอ๊บจ๋า มาปักเทียนให้เค้กวันเกิดของคุณนุ้ยกัน อ๊บ อ๊บ ',
@@ -198,7 +198,7 @@
         }
 
         for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop])
-        window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0')
+        window.open(shareURL, '_blank')
       }
     },
     created () {

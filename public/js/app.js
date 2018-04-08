@@ -48721,16 +48721,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return message.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;').replace(/\n/g, '<br/>');
     },
     twitterShared: function twitterShared() {
-      var shareURL = "http://twitter.com/share?";
+      var shareURL = "http://twitter.com/intent/tweet?";
       var params = {
         url: 'https://noeybnk48hbd2018.herokuapp.com',
-        text: 'Happy! Happy Birthday นี่ไงเค้กของเธอปักเทียนวันเกิด~ 🍰',
-        hashtags: 'HBDNOEYBNK48, NoeyBNK48, BNK48'
+        text: 'Happy! Happy Birthday นี่ไงเค้กของเธอปักเทียนวันเกิด~ 🍰\nชาวอ๊บจ๋า มาปักเทียนให้เค้กวันเกิดของคุณนุ้ยกัน อ๊บ อ๊บ ',
+        hashtags: 'HBDNOEYBNK48,NoeyBNK48,BNK48'
       };
 
       for (var prop in params) {
         shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
-      }window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      }window.open(shareURL, '_blank');
     }
   },
   created: function created() {
@@ -50331,7 +50331,9 @@ var render = function() {
       [
         !_vm.success
           ? _c("div", { staticClass: "hint" }, [
-              _c("small", [_vm._v("กดที่เค้กเพื่อปักเทียน(อวยพร)")])
+              _c("small", [
+                _vm._v("กดที่ 🍰 เพื่ออวยพรและปักเทียนสำหรับวันเกิด!")
+              ])
             ])
           : _vm._e(),
         _vm._v(" "),
@@ -50353,7 +50355,7 @@ var render = function() {
                     _c(
                       "footer",
                       { staticClass: "blockquote-footer card-name" },
-                      [_vm._v("💚 🐸 " + _vm._s(item.name))]
+                      [_vm._v(_vm._s(item.name) + " 💚 🐸")]
                     )
                   ])
                 ])
