@@ -171,8 +171,12 @@
         if (!this.invalidForm) {
           axios.post('/api/message', this.modal).then((res) => {
             let { result, total } = res.data
+            let { name, message } = result
             this.message.unshift(result);
             this.total = numeral(total).format('0,0')
+            this.card.name = name
+            this.card.message = message;
+
             $('#modal').modal('hide')
           })
         }

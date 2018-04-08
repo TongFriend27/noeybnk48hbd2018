@@ -48706,9 +48706,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
           var _res$data = res.data,
               result = _res$data.result,
               total = _res$data.total;
+          var name = result.name,
+              message = result.message;
 
           _this3.message.unshift(result);
           _this3.total = __WEBPACK_IMPORTED_MODULE_1_numeral___default()(total).format('0,0');
+          _this3.card.name = name;
+          _this3.card.message = message;
+
           $('#modal').modal('hide');
         });
       }
