@@ -15,7 +15,7 @@
         <meta property="og:title" content="Happy 21st Birthday #NoeyBNK48 [09.04.18]">
         <meta property="og:site_name" content="Noey BNK48">
         <meta property="og:url" content="https://noeybnk48hbd2018.herokuapp.com/">
-        <meta property="og:image" content="{{ asset('images/banner.jog') }}">
+        <meta property="og:image" content="{{ asset('images/banner.jpg') }}">
         <meta property="article:published_time" content="2018-04-09">
         <meta property="article:author" content="https://twitter.com/TongFriend27">
         <meta name="twitter:card" content="summary_large_image">
@@ -23,7 +23,7 @@
         <meta name="twitter:title" content="Happy 21st Birthday #NoeyBNK48 [09.04.18]">
         <meta name="twitter:description" content="Happy! Happy Birthday นี่ไงเค้กของเธอปักเทียนวันเกิด~ 🍰
         มาปักเทียนให้เค้กวันเกิดของคุณนุ้ยกัน #HBDNOEYBNK48 #NoeyBNK48 #BNK48">
-        <meta name="twitter:image" content="{{ asset('images/banner.jog') }}">
+        <meta name="twitter:image" content="{{ asset('images/banner.jpg') }}">
         <title>Happy 21st Birthday #NoeyBNK48 [09.04.18]</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
