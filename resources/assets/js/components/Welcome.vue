@@ -82,7 +82,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
-              <button type="button" class="btn btn-primary" :disabled="invalidForm" @click="submit">อวยพร</button>
+              <button type="button" class="btn btn-success" :disabled="invalidForm" @click="submit">อวยพร</button>
             </div>
           </div>
         </div>
