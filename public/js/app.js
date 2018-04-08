@@ -48746,7 +48746,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       _this4.modal.message = '';
       _this4.$v.modal.name.$reset();
       _this4.$v.modal.message.$reset();
-      _this4.twitterShared();
     });
   }
 });
@@ -50572,7 +50571,12 @@ var render = function() {
                       {
                         staticClass: "btn btn-success",
                         attrs: { type: "button", disabled: _vm.invalidForm },
-                        on: { click: _vm.submit }
+                        on: {
+                          click: function($event) {
+                            _vm.submit()
+                            _vm.twitterShared()
+                          }
+                        }
                       },
                       [_vm._v("อวยพร")]
                     )

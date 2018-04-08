@@ -82,7 +82,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
-              <button type="button" class="btn btn-success" :disabled="invalidForm" @click="submit">อวยพร</button>
+              <button type="button" class="btn btn-success" :disabled="invalidForm" @click="submit(); twitterShared();">อวยพร</button>
             </div>
           </div>
         </div>
@@ -212,7 +212,6 @@
         this.modal.message = ''
         this.$v.modal.name.$reset()
         this.$v.modal.message.$reset()
-        this.twitterShared()
       })
     }
   }
