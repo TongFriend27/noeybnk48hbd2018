@@ -49,7 +49,7 @@
             <div class="card-body">
               <blockquote class="blockquote">
                 <p class="mb-0" v-html="escapeHTML(item.message)"></p>
-                <footer class="blockquote-footer card-name">💚 🐸 {{item.name}}</footer>
+                <footer class="blockquote-footer card-name">{{item.name}} 💚 🐸</footer>
               </blockquote>
             </div>
           </div>
