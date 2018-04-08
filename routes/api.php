@@ -35,7 +35,7 @@ Route::get('/get-total', function (Request $request) {
 });
 
 Route::get('/get-all-message', function (Request $request) {
-    return response()->json(['message' => \App\Models\Message::all()]);
+    return response()->json(['message' => \App\Models\Message::orderByDesc('created_at')->get()]);
 });
 
 Route::post('/message', function (Request $request) {

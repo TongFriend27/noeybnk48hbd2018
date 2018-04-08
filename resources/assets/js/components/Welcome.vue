@@ -1,9 +1,9 @@
 <template>
   <div id="welcome" class="container">
     <div class="header">
-      <h3>Happy Birthday</h3>
-      <h1>Noey BNK48</h1>
-      <small>ได้รับคำอวยพรแล้วทั้งหมด {{ total }} ข้อความ</small>
+        <h3>Happy Birthday</h3>
+        <h1>NOEY BNK48</h1>
+        <small>คำอวยพรทั้งหมด {{ total }} ข้อความ</small>
     </div>
     <div class="cake" :style="{ cursor: success ? 'default' : 'pointer' }" @click="openModal">
       <transition name="fade">
@@ -43,12 +43,15 @@
         <small>คลิ๊กที่เค้กเพื่อร่วมอวยพร</small>
       </div>
       <transition name="fade-2">
-        <div class="card" v-if="success">
-          <div class="card-body">
-            <blockquote class="blockquote">
-              <p class="mb-0" v-html="escapeHTML(card.message)"></p>
-              <footer class="blockquote-footer" v-text="card.name"></footer>
-            </blockquote>
+        <!-- <div class="card" v-if="success"> -->
+        <div class="card-container">
+          <div class="card" v-for="(item, index) in message" :key="index">
+            <div class="card-body">
+              <blockquote class="blockquote">
+                <p class="mb-0" v-html="escapeHTML(item.message)"></p>
+                <footer class="blockquote-footer card-name">💚 🐸 {{item.name}}</footer>
+              </blockquote>
+            </div>
           </div>
         </div>
       </transition>
@@ -103,6 +106,8 @@
           name: '',
           message: ''
         },
+        message: {
+        },
         rules: {
           name: {
             min: 1,
@@ -146,6 +151,13 @@
           this.total = numeral(total).format('0,0')
         })
       },
+      getMessage () {
+        axios.get('/api/get-all-message').then((res) => {
+          let { message } = res.data
+          this.message = message;
+          console.log(message);
+        })
+      },
       openModal () {
         if (this.success) {
           return false
@@ -160,10 +172,9 @@
         if (!this.invalidForm) {
           axios.post('/api/message', this.modal).then((res) => {
             let { result, total } = res.data
-            let { name, message } = result
+            this.message.unshift(result);
             this.total = numeral(total).format('0,0')
-            this.card.name = name
-            this.card.message = message
+            console.log(this.message);
             $('#modal').modal('hide')
           })
         }
@@ -180,6 +191,7 @@
     },
     created () {
       this.getTotal()
+      this.getMessage();
     },
     mounted () {
       console.log('Component mounted.')

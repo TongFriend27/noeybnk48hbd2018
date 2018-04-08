@@ -14089,7 +14089,7 @@ window.axios = __webpack_require__(19);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 if (true) {
-  window.axios.defaults.baseURL = 'http://localhost/bnk48/hbd/noey/2018/public';
+  window.axios.defaults.baseURL = 'http://localhost:8000/';
 }
 
 /**
@@ -48056,7 +48056,7 @@ exports = module.exports = __webpack_require__(46)(false);
 
 
 // module
-exports.push([module.i, "\n* {\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n}\n*:before, *:after {\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n}\nhtml {\n  min-height: 100vh;\n  display: grid;\n}\nbody {\n  min-height: 100vh;\n  display: grid;\n  margin: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n  -ms-flex: 1;\n  flex: 1;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  background: #fbc7bf;\n}\n.container {\n  margin: auto;\n  width: 18rem;\n  height: 14rem;\n}\n.fill {\n  z-index: 1;\n  width: 16rem;\n  height: 2rem;\n  border-radius: 0% 10% 10% 0%;\n}\n.fill.top, .fill.middle, .fill.bottom {\n    position: absolute;\n    background: #fde2ab;\n}\n.fill.top {\n    top: 5rem;\n}\n.fill.middle {\n    top: 8.5rem;\n}\n.fill.bottom {\n    bottom: 0;\n}\n.fill.strawberry-fill {\n    position: absolute;\n    top: 2.5rem;\n    left: 2rem;\n    width: 4rem;\n    height: 2rem;\n    background: #f29583;\n    border-radius: 100%;\n}\n.fill.strawberry-fill.right {\n      left: 10rem;\n}\n.strawberry {\n  position: absolute;\n  z-index: 2;\n  top: -3rem;\n  left: 9rem;\n  width: 5.5rem;\n  height: 5.5rem;\n  background: #f29583;\n  border-radius: 100% 100% 100% 20%;\n}\n.strawberry .seeds {\n    z-index: 2;\n    width: 0.35rem;\n    height: 0.5rem;\n    border-radius: 100%;\n    -webkit-transform: rotate(10deg);\n    transform: rotate(10deg);\n}\n.strawberry .seeds.one, .strawberry .seeds.two, .strawberry .seeds.three, .strawberry .seeds.four, .strawberry .seeds.five, .strawberry .seeds.six {\n      position: absolute;\n      background: #fff;\n}\n.strawberry .seeds.one {\n      top: 3rem;\n      left: 1.5rem;\n}\n.strawberry .seeds.two {\n      top: 1rem;\n      left: 2rem;\n}\n.strawberry .seeds.three {\n      top: 2rem;\n      left: 3rem;\n}\n.strawberry .seeds.four {\n      top: 2.5rem;\n      left: 4.5rem;\n}\n.strawberry .seeds.five {\n      top: 3.5rem;\n      left: 3.5rem;\n}\n.strawberry .seeds.six {\n      top: 0.8rem;\n      left: 4rem;\n}\n.stem {\n  z-index: 1;\n  width: 2rem;\n  height: 2rem;\n  border-radius: 100% 0%;\n}\n.stem.top, .stem.middle, .stem.bottom {\n    position: absolute;\n    background: #b6f2a4;\n}\n.stem.top {\n    top: -4rem;\n    left: 12rem;\n    -webkit-transform: rotate(-30deg);\n    transform: rotate(-30deg);\n}\n.stem.middle {\n    top: -3.5rem;\n    left: 13rem;\n    -webkit-transform: rotate(5deg);\n    transform: rotate(5deg);\n}\n.stem.bottom {\n    top: -2.5rem;\n    left: 13.5rem;\n    -webkit-transform: rotate(50deg);\n    transform: rotate(50deg);\n}\n.cake {\n  position: absolute;\n  width: 18rem;\n  height: 14rem;\n  background: #f6efd7;\n  border-radius: 100% 40% 20% 50% / 30% 20% 20% 20%;\n}\n.cake:before {\n    content: '';\n    position: absolute;\n    z-index: 1;\n    top: -0.2rem;\n    width: 18rem;\n    height: 4rem;\n    background: #fff;\n    border-radius: 150% 30% 30% 50% / 100% 100% 100% 0%;\n}\n.cake:after {\n    content: '';\n    position: absolute;\n    z-index: -1;\n    top: 9rem;\n    left: 1.3rem;\n    width: 16rem;\n    height: 5rem;\n    opacity: 0.65;\n    border-radius: 100% 100% 50% 0%;\n    -webkit-box-shadow: 0 0 3rem 2rem #d99c8c;\n    box-shadow: 0 0 3rem 2rem #d99c8c;\n}\n.candle {\n  position: absolute;\n  left: 6rem !important;\n  background-color: #b6f2a4;\n  width: 16px;\n  height: 50px;\n  border-radius: 8px / 4px;\n  top: -20px;\n  left: 50%;\n  margin-left: -8px;\n  z-index: 10;\n}\n.candle:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 16px;\n    height: 8px;\n    border-radius: 50%;\n    background-color: #daf8d1;\n}\n\n/* $flameColor: #fde2ab; */\n.flame {\n  position: absolute;\n  background-color: orange;\n  width: 15px;\n  height: 35px;\n  border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;\n  top: -34px;\n  left: 50%;\n  margin-left: -7.5px;\n  z-index: 10;\n  -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n          box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n  -webkit-transform-origin: 50% 90%;\n          transform-origin: 50% 90%;\n  -webkit-animation: flicker 1s ease-in-out alternate infinite;\n          animation: flicker 1s ease-in-out alternate infinite;\n}\n@-webkit-keyframes flicker {\n0% {\n    -webkit-transform: skewX(5deg);\n            transform: skewX(5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);\n}\n25% {\n    -webkit-transform: skewX(-5deg);\n            transform: skewX(-5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n}\n50% {\n    -webkit-transform: skewX(10deg);\n            transform: skewX(10deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);\n}\n75% {\n    -webkit-transform: skewX(-10deg);\n            transform: skewX(-10deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);\n}\n100% {\n    -webkit-transform: skewX(5deg);\n            transform: skewX(5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n}\n}\n@keyframes flicker {\n0% {\n    -webkit-transform: skewX(5deg);\n            transform: skewX(5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);\n}\n25% {\n    -webkit-transform: skewX(-5deg);\n            transform: skewX(-5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n}\n50% {\n    -webkit-transform: skewX(10deg);\n            transform: skewX(10deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);\n}\n75% {\n    -webkit-transform: skewX(-10deg);\n            transform: skewX(-10deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);\n}\n100% {\n    -webkit-transform: skewX(5deg);\n            transform: skewX(5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n}\n}\n#welcome {\n  -webkit-touch-callout: none;\n  /* iOS Safari */\n  -webkit-user-select: none;\n  /* Safari */\n  /* Konqueror HTML */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* Internet Explorer/Edge */\n  user-select: none;\n  /* Non-prefixed version, currently supported by Chrome and Opera */\n  margin-top: 250px;\n}\n#welcome > .header {\n    position: absolute;\n    top: 50px;\n    width: inherit;\n    text-align: center;\n    color: grey;\n}\n#welcome > .bottom {\n    color: grey;\n    margin-top: 250px;\n}\n#welcome > .bottom .blockquote {\n      margin-bottom: 0;\n}\n#welcome > .bottom > .hint {\n      text-align: right;\n}\n#welcome .fade-enter-active, #welcome .fade-leave-active {\n    -webkit-transition: opacity 1s;\n    transition: opacity 1s;\n}\n#welcome .fade-enter, #welcome .fade-leave-to {\n    opacity: 0;\n}\n#welcome .fade-2-enter-active, #welcome .fade-2-leave-active {\n    -webkit-transition: opacity 2s;\n    transition: opacity 2s;\n}\n#welcome .fade-2-enter, #welcome .fade-2-leave-to {\n    opacity: 0;\n}\n", ""]);
+exports.push([module.i, "\n* {\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n}\n*:before, *:after {\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n}\nhtml {\n  min-height: 100vh;\n  display: grid;\n}\nbody {\n  min-height: 100vh;\n  display: grid;\n  margin: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n  -ms-flex: 1;\n  flex: 1;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  background: #fbc7bf;\n}\n.container {\n  margin: auto;\n  width: 20rem;\n  height: 15rem;\n}\n#welcome {\n  -webkit-touch-callout: none;\n  /* iOS Safari */\n  -webkit-user-select: none;\n  /* Safari */\n  /* Konqueror HTML */\n  -moz-user-select: none;\n  /* Firefox */\n  -ms-user-select: none;\n  /* Internet Explorer/Edge */\n  user-select: none;\n  /* Non-prefixed version, currently supported by Chrome and Opera */\n  margin-top: 250px;\n}\n#welcome > .header {\n    position: absolute;\n    top: 50px;\n    width: inherit;\n    text-align: center;\n    color: green;\n}\n#welcome > .header > h3, #welcome > .header h1 {\n      font-size: 3em;\n      font-weight: 700;\n      color: whitesmoke;\n}\n#welcome > .header > small {\n      letter-spacing: 5px;\n}\n#welcome > .bottom {\n    color: grey;\n    margin-top: 250px;\n    padding-top: 1.5em;\n}\n#welcome > .bottom .blockquote {\n      margin-bottom: 0;\n}\n#welcome > .bottom > .hint {\n      text-align: center;\n      letter-spacing: 5px;\n      color: green;\n      text-decoration: blink;\n}\n#welcome > .bottom > .card-container {\n      display: block;\n      margin-top: 2em;\n}\n#welcome > .bottom > .card-container > .card {\n        margin-top: inherit;\n}\n#welcome .card-name {\n    margin-top: 10px;\n    font-size: 0.7em;\n    font-weight: 700;\n    color: green;\n}\n#welcome .fade-enter-active, #welcome .fade-leave-active {\n    -webkit-transition: opacity 1s;\n    transition: opacity 1s;\n}\n#welcome .fade-enter, #welcome .fade-leave-to {\n    opacity: 0;\n}\n#welcome .fade-2-enter-active, #welcome .fade-2-leave-active {\n    -webkit-transition: opacity 2s;\n    transition: opacity 2s;\n}\n#welcome .fade-2-enter, #welcome .fade-2-leave-to {\n    opacity: 0;\n}\n.fill {\n  z-index: 1;\n  width: 16rem;\n  height: 2rem;\n  border-radius: 0% 10% 10% 0%;\n}\n.fill.top, .fill.middle, .fill.bottom {\n    position: absolute;\n    background: #fde2ab;\n}\n.fill.top {\n    top: 5rem;\n}\n.fill.middle {\n    top: 8.5rem;\n}\n.fill.bottom {\n    bottom: 0;\n}\n.fill.strawberry-fill {\n    position: absolute;\n    top: 2.5rem;\n    left: 2rem;\n    width: 4rem;\n    height: 2rem;\n    background: #f29583;\n    border-radius: 100%;\n}\n.fill.strawberry-fill.right {\n      left: 10rem;\n}\n.strawberry {\n  position: absolute;\n  z-index: 2;\n  top: -3rem;\n  left: 9rem;\n  width: 5.5rem;\n  height: 5.5rem;\n  background: #f29583;\n  border-radius: 100% 100% 100% 20%;\n}\n.strawberry .seeds {\n    z-index: 2;\n    width: 0.35rem;\n    height: 0.5rem;\n    border-radius: 100%;\n    -webkit-transform: rotate(10deg);\n    transform: rotate(10deg);\n}\n.strawberry .seeds.one, .strawberry .seeds.two, .strawberry .seeds.three, .strawberry .seeds.four, .strawberry .seeds.five, .strawberry .seeds.six {\n      position: absolute;\n      background: #fff;\n}\n.strawberry .seeds.one {\n      top: 3rem;\n      left: 1.5rem;\n}\n.strawberry .seeds.two {\n      top: 1rem;\n      left: 2rem;\n}\n.strawberry .seeds.three {\n      top: 2rem;\n      left: 3rem;\n}\n.strawberry .seeds.four {\n      top: 2.5rem;\n      left: 4.5rem;\n}\n.strawberry .seeds.five {\n      top: 3.5rem;\n      left: 3.5rem;\n}\n.strawberry .seeds.six {\n      top: 0.8rem;\n      left: 4rem;\n}\n.stem {\n  z-index: 1;\n  width: 2rem;\n  height: 2rem;\n  border-radius: 100% 0%;\n}\n.stem.top, .stem.middle, .stem.bottom {\n    position: absolute;\n    background: #b6f2a4;\n}\n.stem.top {\n    top: -4rem;\n    left: 12rem;\n    -webkit-transform: rotate(-30deg);\n    transform: rotate(-30deg);\n}\n.stem.middle {\n    top: -3.5rem;\n    left: 13rem;\n    -webkit-transform: rotate(5deg);\n    transform: rotate(5deg);\n}\n.stem.bottom {\n    top: -2.5rem;\n    left: 13.5rem;\n    -webkit-transform: rotate(50deg);\n    transform: rotate(50deg);\n}\n.cake {\n  position: absolute;\n  margin-top: 2rem;\n  width: 18rem;\n  height: 14rem;\n  background: #f6efd7;\n  border-radius: 100% 40% 20% 50% / 30% 20% 20% 20%;\n}\n.cake:before {\n    content: '';\n    position: absolute;\n    z-index: 1;\n    top: -0.2rem;\n    width: 18rem;\n    height: 4rem;\n    background: #fff;\n    border-radius: 150% 30% 30% 50% / 100% 100% 100% 0%;\n}\n.cake:after {\n    content: '';\n    position: absolute;\n    z-index: -1;\n    top: 9rem;\n    left: 1.3rem;\n    width: 16rem;\n    height: 5rem;\n    opacity: 0.65;\n    border-radius: 100% 100% 50% 0%;\n    -webkit-box-shadow: 0 0 3rem 2rem #d99c8c;\n    box-shadow: 0 0 3rem 2rem #d99c8c;\n}\n.candle {\n  position: absolute;\n  left: 6rem !important;\n  background-color: #b6f2a4;\n  width: 16px;\n  height: 50px;\n  border-radius: 8px / 4px;\n  top: -20px;\n  left: 50%;\n  margin-left: -8px;\n  z-index: 10;\n}\n.candle:before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 16px;\n    height: 8px;\n    border-radius: 50%;\n    background-color: #daf8d1;\n}\n\n/* $flameColor: #fde2ab; */\n.flame {\n  position: absolute;\n  background-color: orange;\n  width: 15px;\n  height: 35px;\n  border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;\n  top: -34px;\n  left: 50%;\n  margin-left: -7.5px;\n  z-index: 10;\n  -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n          box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n  -webkit-transform-origin: 50% 90%;\n          transform-origin: 50% 90%;\n  -webkit-animation: flicker 1s ease-in-out alternate infinite;\n          animation: flicker 1s ease-in-out alternate infinite;\n}\n@-webkit-keyframes flicker {\n0% {\n    -webkit-transform: skewX(5deg);\n            transform: skewX(5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);\n}\n25% {\n    -webkit-transform: skewX(-5deg);\n            transform: skewX(-5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n}\n50% {\n    -webkit-transform: skewX(10deg);\n            transform: skewX(10deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);\n}\n75% {\n    -webkit-transform: skewX(-10deg);\n            transform: skewX(-10deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);\n}\n100% {\n    -webkit-transform: skewX(5deg);\n            transform: skewX(5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n}\n}\n@keyframes flicker {\n0% {\n    -webkit-transform: skewX(5deg);\n            transform: skewX(5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.2), 0 0 20px rgba(255, 165, 0, 0.2), 0 0 60px rgba(255, 165, 0, 0.2), 0 0 80px rgba(255, 165, 0, 0.2);\n}\n25% {\n    -webkit-transform: skewX(-5deg);\n            transform: skewX(-5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n}\n50% {\n    -webkit-transform: skewX(10deg);\n            transform: skewX(10deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.3), 0 0 20px rgba(255, 165, 0, 0.3), 0 0 60px rgba(255, 165, 0, 0.3), 0 0 80px rgba(255, 165, 0, 0.3);\n}\n75% {\n    -webkit-transform: skewX(-10deg);\n            transform: skewX(-10deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.4), 0 0 60px rgba(255, 165, 0, 0.4), 0 0 80px rgba(255, 165, 0, 0.4);\n}\n100% {\n    -webkit-transform: skewX(5deg);\n            transform: skewX(5deg);\n    -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n            box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);\n}\n}\n", ""]);
 
 // exports
 
@@ -48613,6 +48613,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -48628,6 +48631,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         name: '',
         message: ''
       },
+      message: {},
       rules: {
         name: {
           min: 1,
@@ -48675,6 +48679,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         _this.total = __WEBPACK_IMPORTED_MODULE_1_numeral___default()(total).format('0,0');
       });
     },
+    getMessage: function getMessage() {
+      var _this2 = this;
+
+      axios.get('/api/get-all-message').then(function (res) {
+        var message = res.data.message;
+
+        _this2.message = message;
+        console.log(message);
+      });
+    },
     openModal: function openModal() {
       if (this.success) {
         return false;
@@ -48686,19 +48700,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return this.$v.modal[model].$error ? this.$v.modal[model][validator] === false : false;
     },
     submit: function submit() {
-      var _this2 = this;
+      var _this3 = this;
 
       if (!this.invalidForm) {
         axios.post('/api/message', this.modal).then(function (res) {
           var _res$data = res.data,
               result = _res$data.result,
               total = _res$data.total;
-          var name = result.name,
-              message = result.message;
 
-          _this2.total = __WEBPACK_IMPORTED_MODULE_1_numeral___default()(total).format('0,0');
-          _this2.card.name = name;
-          _this2.card.message = message;
+          _this3.message.unshift(result);
+          _this3.total = __WEBPACK_IMPORTED_MODULE_1_numeral___default()(total).format('0,0');
+          console.log(_this3.message);
           $('#modal').modal('hide');
         });
       }
@@ -48709,16 +48721,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   created: function created() {
     this.getTotal();
+    this.getMessage();
   },
   mounted: function mounted() {
-    var _this3 = this;
+    var _this4 = this;
 
     console.log('Component mounted.');
     $('#modal').on('hidden.bs.modal', function () {
-      _this3.modal.name = '';
-      _this3.modal.message = '';
-      _this3.$v.modal.name.$reset();
-      _this3.$v.modal.message.$reset();
+      _this4.modal.name = '';
+      _this4.modal.message = '';
+      _this4.$v.modal.name.$reset();
+      _this4.$v.modal.message.$reset();
     });
   }
 });
@@ -50264,11 +50277,9 @@ var render = function() {
     _c("div", { staticClass: "header" }, [
       _c("h3", [_vm._v("Happy Birthday")]),
       _vm._v(" "),
-      _c("h1", [_vm._v("Noey BNK48")]),
+      _c("h1", [_vm._v("NOEY BNK48")]),
       _vm._v(" "),
-      _c("small", [
-        _vm._v("ได้รับคำอวยพรแล้วทั้งหมด " + _vm._s(_vm.total) + " ข้อความ")
-      ])
+      _c("small", [_vm._v("คำอวยพรทั้งหมด " + _vm._s(_vm.total) + " ข้อความ")])
     ]),
     _vm._v(" "),
     _c(
@@ -50310,25 +50321,30 @@ var render = function() {
           : _vm._e(),
         _vm._v(" "),
         _c("transition", { attrs: { name: "fade-2" } }, [
-          _vm.success
-            ? _c("div", { staticClass: "card" }, [
+          _c(
+            "div",
+            { staticClass: "card-container" },
+            _vm._l(_vm.message, function(item, index) {
+              return _c("div", { key: index, staticClass: "card" }, [
                 _c("div", { staticClass: "card-body" }, [
                   _c("blockquote", { staticClass: "blockquote" }, [
                     _c("p", {
                       staticClass: "mb-0",
                       domProps: {
-                        innerHTML: _vm._s(_vm.escapeHTML(_vm.card.message))
+                        innerHTML: _vm._s(_vm.escapeHTML(item.message))
                       }
                     }),
                     _vm._v(" "),
-                    _c("footer", {
-                      staticClass: "blockquote-footer",
-                      domProps: { textContent: _vm._s(_vm.card.name) }
-                    })
+                    _c(
+                      "footer",
+                      { staticClass: "blockquote-footer card-name" },
+                      [_vm._v("💚 🐸 " + _vm._s(item.name))]
+                    )
                   ])
                 ])
               ])
-            : _vm._e()
+            })
+          )
         ]),
         _vm._v(" "),
         _c(

@@ -33,9 +33,79 @@ body {
 
 .container {
   margin: auto;
-  width: 18rem;
-  height: 14rem;
+  width: 20rem;
+  height: 15rem;
 }
+
+#welcome {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  margin-top: 250px;
+  > .header {
+    position: absolute;
+    top: 50px;
+    width: inherit;
+    text-align: center;
+    color: green;
+    > h3,h1 {
+      font-size: 3em;
+      font-weight: 700;
+      color: whitesmoke;
+    }
+    > small {
+      letter-spacing: 5px;
+    }
+  }
+  > .bottom {
+    color: grey;
+    margin-top: 250px;
+    padding-top: 1.5em;
+    .blockquote {
+      margin-bottom: 0;
+    }
+    > .hint {
+      text-align: center;
+      letter-spacing: 5px;
+      color: green;
+      text-decoration: blink;
+    }
+    > .card-container {
+      display: block;
+      margin-top: 2em;
+      > .card {
+        margin-top: inherit;
+      }
+    }
+  }
+
+  .card-name {
+    margin-top: 10px;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: green;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 1s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+  .fade-2-enter-active, .fade-2-leave-active {
+    transition: opacity 2s;
+  }
+  .fade-2-enter, .fade-2-leave-to /* .fade-2-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+}
+
+
+// ############################# CAKE ###################################
+
 
 .fill {
   z-index: 1;
@@ -151,6 +221,7 @@ body {
 
 .cake {
   position: absolute;
+  margin-top: 2rem;
   width: 18rem;
   height: 14rem;
   background: #f6efd7;
@@ -260,43 +331,4 @@ $flameColor: orange;
       0 0 20px rgba($flameColor, 0.5),
       0 0 60px rgba($flameColor, 0.5),
       0 0 80px rgba($flameColor, 0.5) }
-}
-
-#welcome {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
-  margin-top: 250px;
-  > .header {
-    position: absolute;
-    top: 50px;
-    width: inherit;
-    text-align: center;
-    color: grey;
-  }
-  > .bottom {
-    color: grey;
-    margin-top: 250px;
-    .blockquote {
-      margin-bottom: 0;
-    }
-    > .hint {
-      text-align: right;
-    }
-  }
-  .fade-enter-active, .fade-leave-active {
-    transition: opacity 1s;
-  }
-  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-    opacity: 0;
-  }
-  .fade-2-enter-active, .fade-2-leave-active {
-    transition: opacity 2s;
-  }
-  .fade-2-enter, .fade-2-leave-to /* .fade-2-leave-active below version 2.1.8 */ {
-    opacity: 0;
-  }
 }

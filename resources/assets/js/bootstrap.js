@@ -24,7 +24,7 @@ window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 if (process.env.NODE_ENV == 'development') {
-	window.axios.defaults.baseURL = 'http://localhost/bnk48/hbd/noey/2018/public';
+	window.axios.defaults.baseURL = 'http://localhost:8000/';
 }
 
 /**
