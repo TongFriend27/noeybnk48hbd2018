@@ -155,7 +155,6 @@
         axios.get('/api/get-all-message').then((res) => {
           let { message } = res.data
           this.message = message;
-          console.log(message);
         })
       },
       openModal () {
@@ -174,7 +173,6 @@
             let { result, total } = res.data
             this.message.unshift(result);
             this.total = numeral(total).format('0,0')
-            console.log(this.message);
             $('#modal').modal('hide')
           })
         }
