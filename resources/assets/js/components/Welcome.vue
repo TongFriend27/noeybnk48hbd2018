@@ -40,7 +40,7 @@
     </div>
     <div class="bottom" :style="{ marginBottom: success ? '300px' : 0 }">
       <div class="hint" v-if="!success">
-        <small>กดที่เค้กเพื่อปักเทียน(อวยพร)</small>
+        <small>กดที่เค้กเพื่ออวยพรและปักเทียนวันเกิด!</small>
       </div>
       <transition name="fade-2">
         <!-- <div class="card" v-if="success"> -->
