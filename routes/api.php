@@ -34,6 +34,10 @@ Route::get('/get-total', function (Request $request) {
     return response()->json(['total' => \App\Models\Message::count()]);
 });
 
+Route::get('/get-all-message', function (Request $request) {
+    return response()->json(['message' => \App\Models\Message::all()]);
+});
+
 Route::post('/message', function (Request $request) {
 	$name = $request->get('name');
 	$message = $request->get('message');
